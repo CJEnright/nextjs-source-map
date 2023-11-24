@@ -1,5 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
+require("source-map-support").install();
+
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   console.log(new Error().stack);
 
